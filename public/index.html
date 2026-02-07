@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PromoTrack - Faculty Promotion System</title>
+    <title>PromoTrack - نظام الترقيات الأكاديمية</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,29 +30,29 @@
                     </div>
                     <span class="logo-text">PromoTrack</span>
                 </div>
-                <p class="wizard-subtitle">Faculty Promotion Eligibility Check</p>
+                <p class="wizard-subtitle">فحص أهلية الترقية الأكاديمية</p>
             </div>
 
             <!-- Progress Steps -->
             <div class="wizard-progress">
                 <div class="progress-step active" data-step="1">
                     <span class="step-number">1</span>
-                    <span class="step-label">Profile</span>
+                    <span class="step-label">الملف الشخصي</span>
                 </div>
                 <div class="progress-line"></div>
                 <div class="progress-step" data-step="2">
                     <span class="step-number">2</span>
-                    <span class="step-label">Position</span>
+                    <span class="step-label">المنصب</span>
                 </div>
                 <div class="progress-line"></div>
                 <div class="progress-step" data-step="3">
                     <span class="step-number">3</span>
-                    <span class="step-label">Activities</span>
+                    <span class="step-label">الأنشطة</span>
                 </div>
                 <div class="progress-line"></div>
                 <div class="progress-step" data-step="4">
                     <span class="step-number">4</span>
-                    <span class="step-label">Result</span>
+                    <span class="step-label">النتيجة</span>
                 </div>
             </div>
 
@@ -61,55 +61,55 @@
                 <!-- Step 1: Basic Info -->
                 <div class="wizard-step active" id="step-1">
                     <div class="step-card glass-card">
-                        <h2>Welcome! Let's check your eligibility</h2>
-                        <p class="step-description">Enter your basic information to get started</p>
-                        
+                        <h2>مرحباً! لنتحقق من أهليتك للترقية</h2>
+                        <p class="step-description">أدخل معلوماتك الأساسية للبدء</p>
+
                         <div class="form-group">
-                            <label>Your Full Name</label>
-                            <input type="text" id="wizard-name" placeholder="e.g., Dr. Ahmed Al-Rashid" class="wizard-input">
+                            <label>الاسم الكامل</label>
+                            <input type="text" id="wizard-name" placeholder="مثال: د. أحمد الراشد" class="wizard-input">
                         </div>
-                        
+
                         <div class="form-group">
-                            <label>Your Degree</label>
+                            <label>الدرجة العلمية</label>
                             <div class="option-cards">
                                 <label class="option-card">
                                     <input type="radio" name="wizard-degree" value="masters">
                                     <div class="option-content">
                                         <span class="option-icon">🎓</span>
-                                        <span class="option-title">Master's Degree</span>
+                                        <span class="option-title">درجة الماجستير</span>
                                     </div>
                                 </label>
                                 <label class="option-card">
                                     <input type="radio" name="wizard-degree" value="phd">
                                     <div class="option-content">
                                         <span class="option-icon">🏆</span>
-                                        <span class="option-title">Ph.D. Degree</span>
+                                        <span class="option-title">درجة الدكتوراه</span>
                                     </div>
                                 </label>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="wizard-actions">
-                        <button class="btn-secondary" disabled>← Back</button>
-                        <button class="btn-primary" onclick="nextStep(1)">Next →</button>
+                        <button class="btn-secondary" disabled>رجوع →</button>
+                        <button class="btn-primary" onclick="nextStep(1)">← التالي</button>
                     </div>
                 </div>
 
                 <!-- Step 2: Position -->
                 <div class="wizard-step" id="step-2">
                     <div class="step-card glass-card">
-                        <h2>What is your current position?</h2>
-                        <p class="step-description">Select your current academic position</p>
-                        
+                        <h2>ما هو منصبك الحالي؟</h2>
+                        <p class="step-description">اختر منصبك الأكاديمي الحالي</p>
+
                         <div class="option-cards vertical">
                             <label class="option-card large">
                                 <input type="radio" name="wizard-position" value="teaching_assistant">
                                 <div class="option-content">
                                     <span class="option-icon">👨‍🏫</span>
                                     <div class="option-details">
-                                        <span class="option-title">Teaching Assistant</span>
-                                        <span class="option-desc">Required: 46-70 points for Lecturer</span>
+                                        <span class="option-title">معيد</span>
+                                        <span class="option-desc">المطلوب: 46-70 نقطة للترقية إلى محاضر</span>
                                     </div>
                                 </div>
                             </label>
@@ -118,8 +118,8 @@
                                 <div class="option-content">
                                     <span class="option-icon">👨‍💼</span>
                                     <div class="option-details">
-                                        <span class="option-title">Lecturer</span>
-                                        <span class="option-desc">Required: 50-80 points for Assistant Professor</span>
+                                        <span class="option-title">محاضر</span>
+                                        <span class="option-desc">المطلوب: 50-80 نقطة للترقية إلى أستاذ مساعد</span>
                                     </div>
                                 </div>
                             </label>
@@ -128,45 +128,45 @@
                                 <div class="option-content">
                                     <span class="option-icon">👨‍🔬</span>
                                     <div class="option-details">
-                                        <span class="option-title">Assistant Professor</span>
-                                        <span class="option-desc">Required: 60-100 points for Associate Professor</span>
+                                        <span class="option-title">أستاذ مساعد</span>
+                                        <span class="option-desc">المطلوب: 60-100 نقطة للترقية إلى أستاذ مشارك</span>
                                     </div>
                                 </div>
                             </label>
                         </div>
                     </div>
-                    
+
                     <div class="wizard-actions">
-                        <button class="btn-secondary" onclick="prevStep(2)">← Back</button>
-                        <button class="btn-primary" onclick="nextStep(2)">Next →</button>
+                        <button class="btn-secondary" onclick="prevStep(2)">رجوع →</button>
+                        <button class="btn-primary" onclick="nextStep(2)">← التالي</button>
                     </div>
                 </div>
 
                 <!-- Step 3: Activities -->
                 <div class="wizard-step" id="step-3">
                     <div class="step-card glass-card">
-                        <h2>Enter your activities</h2>
-                        <p class="step-description">Add your academic achievements to calculate points</p>
-                        
+                        <h2>أدخل أنشطتك</h2>
+                        <p class="step-description">أضف إنجازاتك الأكاديمية لحساب النقاط</p>
+
                         <!-- Activity Tabs -->
                         <div class="activity-tabs">
                             <button class="activity-tab active" data-activity="research">
-                                📄 Research
+                                📄 الأبحاث
                             </button>
                             <button class="activity-tab" data-activity="patents">
-                                💎 Patents
+                                💎 براءات الاختراع
                             </button>
                             <button class="activity-tab" data-activity="supervision">
-                                👥 Supervision
+                                👥 الإشراف
                             </button>
                             <button class="activity-tab" data-activity="conferences">
-                                🎤 Conferences
+                                🎤 المؤتمرات
                             </button>
                             <button class="activity-tab" data-activity="training">
-                                🎓 Training
+                                🎓 التدريب
                             </button>
                             <button class="activity-tab" data-activity="teaching">
-                                📚 Teaching
+                                📚 التدريس
                             </button>
                         </div>
 
@@ -175,20 +175,20 @@
                             <div class="activity-form">
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label>Paper Title</label>
-                                        <input type="text" id="w-research-title" placeholder="Research paper title">
+                                        <label>عنوان البحث</label>
+                                        <input type="text" id="w-research-title" placeholder="عنوان البحث العلمي">
                                     </div>
                                     <div class="form-group">
-                                        <label>Journal Quartile</label>
+                                        <label>تصنيف المجلة</label>
                                         <select id="w-research-quartile">
-                                            <option value="Q1">Q1 (15 pts)</option>
-                                            <option value="Q2">Q2 (12 pts)</option>
-                                            <option value="Q3">Q3 (10 pts)</option>
-                                            <option value="Q4">Q4 (5 pts)</option>
-                                            <option value="local">Local (3 pts)</option>
+                                            <option value="Q1">Q1 (15 نقطة)</option>
+                                            <option value="Q2">Q2 (12 نقطة)</option>
+                                            <option value="Q3">Q3 (10 نقاط)</option>
+                                            <option value="Q4">Q4 (5 نقاط)</option>
+                                            <option value="local">محلي (3 نقاط)</option>
                                         </select>
                                     </div>
-                                    <button class="btn-add" onclick="addWizardItem('research')">+ Add</button>
+                                    <button class="btn-add" onclick="addWizardItem('research')">+ إضافة</button>
                                 </div>
                             </div>
                             <div class="activity-list" id="w-research-list"></div>
@@ -199,17 +199,17 @@
                             <div class="activity-form">
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label>Patent Title</label>
-                                        <input type="text" id="w-patent-title" placeholder="Patent title">
+                                        <label>عنوان براءة الاختراع</label>
+                                        <input type="text" id="w-patent-title" placeholder="عنوان براءة الاختراع">
                                     </div>
                                     <div class="form-group">
-                                        <label>Status</label>
+                                        <label>الحالة</label>
                                         <select id="w-patent-status">
-                                            <option value="granted">Granted (20 pts)</option>
-                                            <option value="pending">Pending (10 pts)</option>
+                                            <option value="granted">ممنوحة (20 نقطة)</option>
+                                            <option value="pending">قيد المراجعة (10 نقاط)</option>
                                         </select>
                                     </div>
-                                    <button class="btn-add" onclick="addWizardItem('patents')">+ Add</button>
+                                    <button class="btn-add" onclick="addWizardItem('patents')">+ إضافة</button>
                                 </div>
                             </div>
                             <div class="activity-list" id="w-patents-list"></div>
@@ -220,18 +220,18 @@
                             <div class="activity-form">
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label>Student/Project Name</label>
-                                        <input type="text" id="w-supervision-name" placeholder="Student or project name">
+                                        <label>اسم الطالب/المشروع</label>
+                                        <input type="text" id="w-supervision-name" placeholder="اسم الطالب أو المشروع">
                                     </div>
                                     <div class="form-group">
-                                        <label>Type</label>
+                                        <label>النوع</label>
                                         <select id="w-supervision-type">
-                                            <option value="phd">Ph.D. Dissertation (15 pts)</option>
-                                            <option value="masters">Master's Thesis (10 pts)</option>
-                                            <option value="graduation">Graduation Project (5 pts)</option>
+                                            <option value="phd">رسالة دكتوراه (15 نقطة)</option>
+                                            <option value="masters">رسالة ماجستير (10 نقاط)</option>
+                                            <option value="graduation">مشروع تخرج (5 نقاط)</option>
                                         </select>
                                     </div>
-                                    <button class="btn-add" onclick="addWizardItem('supervision')">+ Add</button>
+                                    <button class="btn-add" onclick="addWizardItem('supervision')">+ إضافة</button>
                                 </div>
                             </div>
                             <div class="activity-list" id="w-supervision-list"></div>
@@ -242,24 +242,24 @@
                             <div class="activity-form">
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label>Conference Name</label>
-                                        <input type="text" id="w-conference-name" placeholder="Conference name">
+                                        <label>اسم المؤتمر</label>
+                                        <input type="text" id="w-conference-name" placeholder="اسم المؤتمر">
                                     </div>
                                     <div class="form-group">
-                                        <label>Type</label>
+                                        <label>النوع</label>
                                         <select id="w-conference-type">
-                                            <option value="international">International</option>
-                                            <option value="local">Local</option>
+                                            <option value="international">دولي</option>
+                                            <option value="local">محلي</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label>Role</label>
+                                        <label>الدور</label>
                                         <select id="w-conference-role">
-                                            <option value="presenter">Presenter (8/5 pts)</option>
-                                            <option value="attendee">Attendee (4/2 pts)</option>
+                                            <option value="presenter">مقدّم (8/5 نقاط)</option>
+                                            <option value="attendee">حاضر (4/2 نقاط)</option>
                                         </select>
                                     </div>
-                                    <button class="btn-add" onclick="addWizardItem('conferences')">+ Add</button>
+                                    <button class="btn-add" onclick="addWizardItem('conferences')">+ إضافة</button>
                                 </div>
                             </div>
                             <div class="activity-list" id="w-conferences-list"></div>
@@ -270,17 +270,17 @@
                             <div class="activity-form">
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label>Course Title</label>
-                                        <input type="text" id="w-training-title" placeholder="Training course title">
+                                        <label>عنوان الدورة</label>
+                                        <input type="text" id="w-training-title" placeholder="عنوان الدورة التدريبية">
                                     </div>
                                     <div class="form-group">
-                                        <label>Type</label>
+                                        <label>النوع</label>
                                         <select id="w-training-certified">
-                                            <option value="true">Certified (5 pts)</option>
-                                            <option value="false">Not Certified (2 pts)</option>
+                                            <option value="true">معتمدة (5 نقاط)</option>
+                                            <option value="false">غير معتمدة (2 نقطة)</option>
                                         </select>
                                     </div>
-                                    <button class="btn-add" onclick="addWizardItem('training')">+ Add</button>
+                                    <button class="btn-add" onclick="addWizardItem('training')">+ إضافة</button>
                                 </div>
                             </div>
                             <div class="activity-list" id="w-training-list"></div>
@@ -291,18 +291,18 @@
                             <div class="activity-form">
                                 <div class="form-row">
                                     <div class="form-group">
-                                        <label>Activity Title</label>
-                                        <input type="text" id="w-teaching-title" placeholder="Teaching activity">
+                                        <label>عنوان النشاط</label>
+                                        <input type="text" id="w-teaching-title" placeholder="النشاط التدريسي">
                                     </div>
                                     <div class="form-group">
-                                        <label>Type</label>
+                                        <label>النوع</label>
                                         <select id="w-teaching-type">
-                                            <option value="course_development">Course Development (8 pts)</option>
-                                            <option value="lectures">Lectures (3 pts)</option>
-                                            <option value="assessment">Assessment (2 pts)</option>
+                                            <option value="course_development">تطوير مقرر (8 نقاط)</option>
+                                            <option value="lectures">محاضرات (3 نقاط)</option>
+                                            <option value="assessment">تقييم (2 نقطة)</option>
                                         </select>
                                     </div>
-                                    <button class="btn-add" onclick="addWizardItem('teaching')">+ Add</button>
+                                    <button class="btn-add" onclick="addWizardItem('teaching')">+ إضافة</button>
                                 </div>
                             </div>
                             <div class="activity-list" id="w-teaching-list"></div>
@@ -311,19 +311,19 @@
                         <!-- Points Summary -->
                         <div class="points-summary">
                             <div class="points-display">
-                                <span class="points-label">Current Points:</span>
+                                <span class="points-label">النقاط الحالية:</span>
                                 <span class="points-value" id="wizard-points">0</span>
-                                <span class="points-max">/ <span id="wizard-required">46</span> required</span>
+                                <span class="points-max">/ <span id="wizard-required">46</span> المطلوب</span>
                             </div>
                             <div class="points-bar">
                                 <div class="points-fill" id="wizard-points-bar"></div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="wizard-actions">
-                        <button class="btn-secondary" onclick="prevStep(3)">← Back</button>
-                        <button class="btn-primary" onclick="nextStep(3)">Check Eligibility →</button>
+                        <button class="btn-secondary" onclick="prevStep(3)">رجوع →</button>
+                        <button class="btn-primary" onclick="nextStep(3)">← فحص الأهلية</button>
                     </div>
                 </div>
 
@@ -332,10 +332,10 @@
                     <div class="step-card glass-card result-card" id="result-card">
                         <!-- Dynamic content will be inserted here -->
                     </div>
-                    
+
                     <div class="wizard-actions">
-                        <button class="btn-secondary" onclick="prevStep(4)">← Back</button>
-                        <button class="btn-primary" id="result-action-btn" onclick="goToDashboard()">Go to Dashboard →</button>
+                        <button class="btn-secondary" onclick="prevStep(4)">رجوع →</button>
+                        <button class="btn-primary" id="result-action-btn" onclick="goToDashboard()">← الذهاب للوحة التحكم</button>
                     </div>
                 </div>
             </div>
@@ -357,22 +357,22 @@
                 <nav class="main-nav">
                     <button class="nav-btn active" data-section="overview">
                         <span class="nav-icon">◈</span>
-                        Overview
+                        نظرة عامة
                     </button>
                     <button class="nav-btn" data-section="achievements">
                         <span class="nav-icon">◆</span>
-                        Achievements
+                        الإنجازات
                     </button>
                     <button class="nav-btn" data-section="simulator">
                         <span class="nav-icon">◇</span>
-                        Simulator
+                        المحاكي
                     </button>
                     <button class="nav-btn" data-section="apply">
                         <span class="nav-icon">▣</span>
-                        Apply
+                        التقديم
                     </button>
                 </nav>
-                <button class="btn-reset" onclick="resetAll()">🔄 Start Over</button>
+                <button class="btn-reset" onclick="resetAll()">البدء من جديد 🔄</button>
             </header>
 
             <!-- Main Content -->
@@ -380,8 +380,8 @@
                 <!-- Overview Section -->
                 <section id="overview" class="section active">
                     <div class="section-header">
-                        <h1>Welcome, <span id="dash-name">Faculty Member</span></h1>
-                        <p class="subtitle">Track your progress toward promotion</p>
+                        <h1>مرحباً، <span id="dash-name">عضو هيئة التدريس</span></h1>
+                        <p class="subtitle">تابع تقدمك نحو الترقية</p>
                     </div>
 
                     <!-- Status Cards -->
@@ -390,35 +390,35 @@
                             <div class="status-icon points-icon">📊</div>
                             <div class="status-info">
                                 <span class="status-value" id="dash-points">0</span>
-                                <span class="status-label">Total Points</span>
+                                <span class="status-label">إجمالي النقاط</span>
                             </div>
                         </div>
                         <div class="status-card glass-card">
                             <div class="status-icon target-icon">🎯</div>
                             <div class="status-info">
                                 <span class="status-value" id="dash-required">46</span>
-                                <span class="status-label">Required Points</span>
+                                <span class="status-label">النقاط المطلوبة</span>
                             </div>
                         </div>
                         <div class="status-card glass-card">
                             <div class="status-icon needed-icon">📈</div>
                             <div class="status-info">
                                 <span class="status-value" id="dash-needed">46</span>
-                                <span class="status-label">Points Needed</span>
+                                <span class="status-label">النقاط المتبقية</span>
                             </div>
                         </div>
                         <div class="status-card glass-card" id="eligibility-card">
                             <div class="status-icon eligible-icon">❓</div>
                             <div class="status-info">
-                                <span class="status-value" id="dash-status">Checking...</span>
-                                <span class="status-label">Eligibility</span>
+                                <span class="status-value" id="dash-status">جاري التحقق...</span>
+                                <span class="status-label">الأهلية</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Progress Section -->
                     <div class="progress-section glass-card">
-                        <h2>Promotion Progress</h2>
+                        <h2>تقدم الترقية</h2>
                         <div class="progress-container">
                             <div class="progress-bar-large">
                                 <div class="progress-fill-large" id="dash-progress-bar"></div>
@@ -428,20 +428,20 @@
                             </div>
                             <div class="progress-labels">
                                 <span>0</span>
-                                <span id="progress-min-label">46 (min)</span>
-                                <span id="progress-max-label">70 (max)</span>
+                                <span id="progress-min-label">46 (أدنى)</span>
+                                <span id="progress-max-label">70 (أقصى)</span>
                             </div>
                         </div>
                         <div class="progress-info">
-                            <span id="dash-position">Teaching Assistant</span>
-                            <span class="progress-arrow">→</span>
-                            <span id="dash-next-position">Lecturer</span>
+                            <span id="dash-position">معيد</span>
+                            <span class="progress-arrow">←</span>
+                            <span id="dash-next-position">محاضر</span>
                         </div>
                     </div>
 
                     <!-- Points Breakdown -->
                     <div class="breakdown-section glass-card">
-                        <h2>Points Breakdown</h2>
+                        <h2>تفصيل النقاط</h2>
                         <div class="breakdown-grid" id="breakdown-grid">
                             <!-- Dynamic content -->
                         </div>
@@ -451,188 +451,188 @@
                 <!-- Achievements Section -->
                 <section id="achievements" class="section">
                     <div class="section-header">
-                        <h1>Manage Achievements</h1>
-                        <p class="subtitle">Add or remove your academic activities</p>
+                        <h1>إدارة الإنجازات</h1>
+                        <p class="subtitle">أضف أو احذف أنشطتك الأكاديمية</p>
                     </div>
 
                     <!-- Achievement Tabs -->
                     <div class="achievement-tabs">
-                        <button class="tab-btn active" data-tab="d-research">📄 Research</button>
-                        <button class="tab-btn" data-tab="d-patents">💎 Patents</button>
-                        <button class="tab-btn" data-tab="d-supervision">👥 Supervision</button>
-                        <button class="tab-btn" data-tab="d-conferences">🎤 Conferences</button>
-                        <button class="tab-btn" data-tab="d-training">🎓 Training</button>
-                        <button class="tab-btn" data-tab="d-teaching">📚 Teaching</button>
+                        <button class="tab-btn active" data-tab="d-research">📄 الأبحاث</button>
+                        <button class="tab-btn" data-tab="d-patents">💎 براءات الاختراع</button>
+                        <button class="tab-btn" data-tab="d-supervision">👥 الإشراف</button>
+                        <button class="tab-btn" data-tab="d-conferences">🎤 المؤتمرات</button>
+                        <button class="tab-btn" data-tab="d-training">🎓 التدريب</button>
+                        <button class="tab-btn" data-tab="d-teaching">📚 التدريس</button>
                     </div>
 
                     <!-- Research Tab -->
                     <div class="tab-content active" id="tab-d-research">
                         <div class="add-form glass-card">
-                            <h3>Add Research Paper</h3>
+                            <h3>إضافة بحث علمي</h3>
                             <div class="form-grid">
                                 <div class="form-group">
-                                    <label>Paper Title</label>
-                                    <input type="text" id="d-research-title" placeholder="Enter paper title">
+                                    <label>عنوان البحث</label>
+                                    <input type="text" id="d-research-title" placeholder="أدخل عنوان البحث">
                                 </div>
                                 <div class="form-group">
-                                    <label>Journal</label>
-                                    <input type="text" id="d-research-journal" placeholder="Journal name">
+                                    <label>المجلة</label>
+                                    <input type="text" id="d-research-journal" placeholder="اسم المجلة">
                                 </div>
                                 <div class="form-group">
-                                    <label>Quartile</label>
+                                    <label>التصنيف</label>
                                     <select id="d-research-quartile">
-                                        <option value="Q1">Q1 - 15 points</option>
-                                        <option value="Q2">Q2 - 12 points</option>
-                                        <option value="Q3">Q3 - 10 points</option>
-                                        <option value="Q4">Q4 - 5 points</option>
-                                        <option value="local">Local - 3 points</option>
+                                        <option value="Q1">Q1 - 15 نقطة</option>
+                                        <option value="Q2">Q2 - 12 نقطة</option>
+                                        <option value="Q3">Q3 - 10 نقاط</option>
+                                        <option value="Q4">Q4 - 5 نقاط</option>
+                                        <option value="local">محلي - 3 نقاط</option>
                                     </select>
                                 </div>
                             </div>
-                            <button class="btn-primary" onclick="addDashboardItem('research')">+ Add Research</button>
+                            <button class="btn-primary" onclick="addDashboardItem('research')">+ إضافة بحث</button>
                         </div>
                         <div class="items-list" id="d-research-list">
-                            <p class="empty-state">No research papers added yet</p>
+                            <p class="empty-state">لم تتم إضافة أبحاث بعد</p>
                         </div>
                     </div>
 
                     <!-- Patents Tab -->
                     <div class="tab-content" id="tab-d-patents">
                         <div class="add-form glass-card">
-                            <h3>Add Patent</h3>
+                            <h3>إضافة براءة اختراع</h3>
                             <div class="form-grid">
                                 <div class="form-group">
-                                    <label>Patent Title</label>
-                                    <input type="text" id="d-patent-title" placeholder="Patent title">
+                                    <label>عنوان براءة الاختراع</label>
+                                    <input type="text" id="d-patent-title" placeholder="عنوان براءة الاختراع">
                                 </div>
                                 <div class="form-group">
-                                    <label>Patent Number</label>
-                                    <input type="text" id="d-patent-number" placeholder="Patent number">
+                                    <label>رقم البراءة</label>
+                                    <input type="text" id="d-patent-number" placeholder="رقم براءة الاختراع">
                                 </div>
                                 <div class="form-group">
-                                    <label>Status</label>
+                                    <label>الحالة</label>
                                     <select id="d-patent-status">
-                                        <option value="granted">Granted - 20 points</option>
-                                        <option value="pending">Pending - 10 points</option>
+                                        <option value="granted">ممنوحة - 20 نقطة</option>
+                                        <option value="pending">قيد المراجعة - 10 نقاط</option>
                                     </select>
                                 </div>
                             </div>
-                            <button class="btn-primary" onclick="addDashboardItem('patents')">+ Add Patent</button>
+                            <button class="btn-primary" onclick="addDashboardItem('patents')">+ إضافة براءة</button>
                         </div>
                         <div class="items-list" id="d-patents-list">
-                            <p class="empty-state">No patents added yet</p>
+                            <p class="empty-state">لم تتم إضافة براءات اختراع بعد</p>
                         </div>
                     </div>
 
                     <!-- Supervision Tab -->
                     <div class="tab-content" id="tab-d-supervision">
                         <div class="add-form glass-card">
-                            <h3>Add Supervision</h3>
+                            <h3>إضافة إشراف</h3>
                             <div class="form-grid">
                                 <div class="form-group">
-                                    <label>Student Name</label>
-                                    <input type="text" id="d-supervision-student" placeholder="Student name">
+                                    <label>اسم الطالب</label>
+                                    <input type="text" id="d-supervision-student" placeholder="اسم الطالب">
                                 </div>
                                 <div class="form-group">
-                                    <label>Project Title</label>
-                                    <input type="text" id="d-supervision-project" placeholder="Project title">
+                                    <label>عنوان المشروع</label>
+                                    <input type="text" id="d-supervision-project" placeholder="عنوان المشروع">
                                 </div>
                                 <div class="form-group">
-                                    <label>Type</label>
+                                    <label>النوع</label>
                                     <select id="d-supervision-type">
-                                        <option value="phd">Ph.D. - 15 points</option>
-                                        <option value="masters">Master's - 10 points</option>
-                                        <option value="graduation">Graduation - 5 points</option>
+                                        <option value="phd">دكتوراه - 15 نقطة</option>
+                                        <option value="masters">ماجستير - 10 نقاط</option>
+                                        <option value="graduation">تخرج - 5 نقاط</option>
                                     </select>
                                 </div>
                             </div>
-                            <button class="btn-primary" onclick="addDashboardItem('supervision')">+ Add Supervision</button>
+                            <button class="btn-primary" onclick="addDashboardItem('supervision')">+ إضافة إشراف</button>
                         </div>
                         <div class="items-list" id="d-supervision-list">
-                            <p class="empty-state">No supervisions added yet</p>
+                            <p class="empty-state">لم تتم إضافة إشرافات بعد</p>
                         </div>
                     </div>
 
                     <!-- Conferences Tab -->
                     <div class="tab-content" id="tab-d-conferences">
                         <div class="add-form glass-card">
-                            <h3>Add Conference</h3>
+                            <h3>إضافة مؤتمر</h3>
                             <div class="form-grid">
                                 <div class="form-group">
-                                    <label>Conference Name</label>
-                                    <input type="text" id="d-conference-name" placeholder="Conference name">
+                                    <label>اسم المؤتمر</label>
+                                    <input type="text" id="d-conference-name" placeholder="اسم المؤتمر">
                                 </div>
                                 <div class="form-group">
-                                    <label>Type</label>
+                                    <label>النوع</label>
                                     <select id="d-conference-type">
-                                        <option value="international">International</option>
-                                        <option value="local">Local</option>
+                                        <option value="international">دولي</option>
+                                        <option value="local">محلي</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Role</label>
+                                    <label>الدور</label>
                                     <select id="d-conference-role">
-                                        <option value="presenter">Presenter</option>
-                                        <option value="attendee">Attendee</option>
+                                        <option value="presenter">مقدّم</option>
+                                        <option value="attendee">حاضر</option>
                                     </select>
                                 </div>
                             </div>
-                            <button class="btn-primary" onclick="addDashboardItem('conferences')">+ Add Conference</button>
+                            <button class="btn-primary" onclick="addDashboardItem('conferences')">+ إضافة مؤتمر</button>
                         </div>
                         <div class="items-list" id="d-conferences-list">
-                            <p class="empty-state">No conferences added yet</p>
+                            <p class="empty-state">لم تتم إضافة مؤتمرات بعد</p>
                         </div>
                     </div>
 
                     <!-- Training Tab -->
                     <div class="tab-content" id="tab-d-training">
                         <div class="add-form glass-card">
-                            <h3>Add Training Course</h3>
+                            <h3>إضافة دورة تدريبية</h3>
                             <div class="form-grid">
                                 <div class="form-group">
-                                    <label>Course Title</label>
-                                    <input type="text" id="d-training-title" placeholder="Course title">
+                                    <label>عنوان الدورة</label>
+                                    <input type="text" id="d-training-title" placeholder="عنوان الدورة">
                                 </div>
                                 <div class="form-group">
-                                    <label>Provider</label>
-                                    <input type="text" id="d-training-provider" placeholder="Provider">
+                                    <label>الجهة المقدمة</label>
+                                    <input type="text" id="d-training-provider" placeholder="الجهة المقدمة">
                                 </div>
                                 <div class="form-group checkbox-group">
                                     <label>
                                         <input type="checkbox" id="d-training-certified">
-                                        <span>Certified (5 pts vs 2 pts)</span>
+                                        <span>معتمدة (5 نقاط مقابل 2 نقطة)</span>
                                     </label>
                                 </div>
                             </div>
-                            <button class="btn-primary" onclick="addDashboardItem('training')">+ Add Training</button>
+                            <button class="btn-primary" onclick="addDashboardItem('training')">+ إضافة تدريب</button>
                         </div>
                         <div class="items-list" id="d-training-list">
-                            <p class="empty-state">No training courses added yet</p>
+                            <p class="empty-state">لم تتم إضافة دورات تدريبية بعد</p>
                         </div>
                     </div>
 
                     <!-- Teaching Tab -->
                     <div class="tab-content" id="tab-d-teaching">
                         <div class="add-form glass-card">
-                            <h3>Add Teaching Activity</h3>
+                            <h3>إضافة نشاط تدريسي</h3>
                             <div class="form-grid">
                                 <div class="form-group">
-                                    <label>Activity Title</label>
-                                    <input type="text" id="d-teaching-title" placeholder="Activity title">
+                                    <label>عنوان النشاط</label>
+                                    <input type="text" id="d-teaching-title" placeholder="عنوان النشاط">
                                 </div>
                                 <div class="form-group">
-                                    <label>Type</label>
+                                    <label>النوع</label>
                                     <select id="d-teaching-type">
-                                        <option value="course_development">Course Development - 8 pts</option>
-                                        <option value="lectures">Lectures - 3 pts</option>
-                                        <option value="assessment">Assessment - 2 pts</option>
+                                        <option value="course_development">تطوير مقرر - 8 نقاط</option>
+                                        <option value="lectures">محاضرات - 3 نقاط</option>
+                                        <option value="assessment">تقييم - 2 نقطة</option>
                                     </select>
                                 </div>
                             </div>
-                            <button class="btn-primary" onclick="addDashboardItem('teaching')">+ Add Teaching</button>
+                            <button class="btn-primary" onclick="addDashboardItem('teaching')">+ إضافة تدريس</button>
                         </div>
                         <div class="items-list" id="d-teaching-list">
-                            <p class="empty-state">No teaching activities added yet</p>
+                            <p class="empty-state">لم تتم إضافة أنشطة تدريسية بعد</p>
                         </div>
                     </div>
                 </section>
@@ -640,62 +640,62 @@
                 <!-- Simulator Section -->
                 <section id="simulator" class="section">
                     <div class="section-header">
-                        <h1>Points Simulator</h1>
-                        <p class="subtitle">Plan your path to promotion</p>
+                        <h1>محاكي النقاط</h1>
+                        <p class="subtitle">خطط لمسارك نحو الترقية</p>
                     </div>
 
                     <div class="simulator-grid">
                         <div class="simulator-options glass-card">
-                            <h3>What if you add...</h3>
+                            <h3>ماذا لو أضفت...</h3>
                             <div class="sim-options">
                                 <label class="sim-option">
                                     <input type="checkbox" id="sim-q1" onchange="runSimulator()">
-                                    <span>Q1 Research Paper (+15 pts)</span>
+                                    <span>بحث Q1 (+15 نقطة)</span>
                                 </label>
                                 <label class="sim-option">
                                     <input type="checkbox" id="sim-q2" onchange="runSimulator()">
-                                    <span>Q2 Research Paper (+12 pts)</span>
+                                    <span>بحث Q2 (+12 نقطة)</span>
                                 </label>
                                 <label class="sim-option">
                                     <input type="checkbox" id="sim-patent" onchange="runSimulator()">
-                                    <span>Granted Patent (+20 pts)</span>
+                                    <span>براءة اختراع ممنوحة (+20 نقطة)</span>
                                 </label>
                                 <label class="sim-option">
                                     <input type="checkbox" id="sim-phd" onchange="runSimulator()">
-                                    <span>Ph.D. Supervision (+15 pts)</span>
+                                    <span>إشراف دكتوراه (+15 نقطة)</span>
                                 </label>
                                 <label class="sim-option">
                                     <input type="checkbox" id="sim-masters" onchange="runSimulator()">
-                                    <span>Master's Supervision (+10 pts)</span>
+                                    <span>إشراف ماجستير (+10 نقاط)</span>
                                 </label>
                                 <label class="sim-option">
                                     <input type="checkbox" id="sim-intl-conf" onchange="runSimulator()">
-                                    <span>International Conference (+8 pts)</span>
+                                    <span>مؤتمر دولي (+8 نقاط)</span>
                                 </label>
                                 <label class="sim-option">
                                     <input type="checkbox" id="sim-training" onchange="runSimulator()">
-                                    <span>Certified Training (+5 pts)</span>
+                                    <span>تدريب معتمد (+5 نقاط)</span>
                                 </label>
                             </div>
                         </div>
 
                         <div class="simulator-result glass-card">
-                            <h3>Simulation Result</h3>
+                            <h3>نتيجة المحاكاة</h3>
                             <div class="sim-comparison">
                                 <div class="sim-current">
-                                    <span class="sim-label">Current</span>
+                                    <span class="sim-label">الحالي</span>
                                     <span class="sim-value" id="sim-current-pts">0</span>
-                                    <span class="sim-pts">points</span>
+                                    <span class="sim-pts">نقطة</span>
                                 </div>
-                                <div class="sim-arrow">→</div>
+                                <div class="sim-arrow">←</div>
                                 <div class="sim-projected">
-                                    <span class="sim-label">Projected</span>
+                                    <span class="sim-label">المتوقع</span>
                                     <span class="sim-value" id="sim-projected-pts">0</span>
-                                    <span class="sim-pts">points</span>
+                                    <span class="sim-pts">نقطة</span>
                                 </div>
                             </div>
                             <div class="sim-gain">
-                                <span>Points gained: </span>
+                                <span>النقاط المكتسبة: </span>
                                 <strong id="sim-gain">+0</strong>
                             </div>
                             <div class="sim-eligibility" id="sim-eligibility">
@@ -708,8 +708,8 @@
                 <!-- Apply Section -->
                 <section id="apply" class="section">
                     <div class="section-header">
-                        <h1>Apply for Promotion</h1>
-                        <p class="subtitle">Submit your promotion application</p>
+                        <h1>التقديم للترقية</h1>
+                        <p class="subtitle">قدّم طلب الترقية الخاص بك</p>
                     </div>
 
                     <div class="apply-card glass-card" id="apply-card">
